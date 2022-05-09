@@ -1,0 +1,11 @@
+<h1>Rooms#show</h1>
+<p>Find me in app/views/rooms/show.html.erb</p>
+
+<div id="room-id" data-room-id=<%= @room.id %>>
+  <% @room.messages.each do |msg| %>
+    <p>
+      <%= msg.content %>
+    </p>
+  <% end %>
+</div>
+
